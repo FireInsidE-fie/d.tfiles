@@ -26,12 +26,15 @@ require("lazy").setup({
   spec = {
     -- import your plugins
 	{
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
+	    "nvim-treesitter/nvim-treesitter",
+	    build = ":TSUpdate",
 	},
 	{
 	    'nvim-lualine/lualine.nvim',
 	    dependencies = { 'nvim-tree/nvim-web-devicons' }
+	},
+	{
+		"catppuccin/nvim", name = "catppuccin", priority = 1000
 	}
   },
   -- Configure any other settings here. See the documentation for more details.
