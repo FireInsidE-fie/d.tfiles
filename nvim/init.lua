@@ -1,3 +1,12 @@
+-- User defined options
+options = {
+	opt = {
+		shiftwidth = 4,
+		tabstop = 4,
+		colorcolumn = 80,
+	}
+}
+
 require("config.lazy")
 
 -- Lualine setup
@@ -19,8 +28,6 @@ require('lualine').setup {
       tabline = 1000,
       winbar = 1000,
     },
-    shiftwidth = 4,
-    tabstop = 4,
   },
   sections = {
     lualine_a = {'mode'},
