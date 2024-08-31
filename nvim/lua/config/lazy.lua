@@ -69,6 +69,24 @@ require("lazy").setup({
 		{
 			"hrsh7th/nvim-cmp"
 		},
+		{
+                       "xiyaowong/transparent.nvim"
+		},
+		{
+			"Diogo-ss/42-header.nvim",
+			cmd = { "Stdheader" },
+  			keys = { "<F1>" },
+			  opts = {
+			    default_map = true, -- Default mapping <F1> in normal mode.
+			    auto_update = true, -- Update header when saving.
+			    user = "estettle", -- Your user.
+			    mail = "your@email.com", -- Your mail.
+			    -- add other options.
+			  },
+			config = function(_, opts)
+		    	require("42header").setup(opts)
+			end,
+		},
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
