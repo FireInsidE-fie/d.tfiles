@@ -70,7 +70,7 @@ require("lazy").setup({
 			"hrsh7th/nvim-cmp"
 		},
 		{
-                       "xiyaowong/transparent.nvim"
+        	"xiyaowong/transparent.nvim"
 		},
 		{
 			"Diogo-ss/42-header.nvim",
@@ -80,13 +80,17 @@ require("lazy").setup({
 			    default_map = true, -- Default mapping <F1> in normal mode.
 			    auto_update = true, -- Update header when saving.
 			    user = "estettle", -- Your user.
-			    mail = "your@email.com", -- Your mail.
+			    mail = "estettle@student.42lausanne.ch", -- Your mail.
 			    -- add other options.
 			  },
 			config = function(_, opts)
 		    	require("42header").setup(opts)
 			end,
 		},
+		{'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
+		{'neovim/nvim-lspconfig'},
+		{'hrsh7th/cmp-nvim-lsp'},
+		{'hrsh7th/nvim-cmp'}
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
