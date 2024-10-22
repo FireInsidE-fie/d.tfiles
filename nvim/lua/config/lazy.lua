@@ -92,7 +92,13 @@ require("lazy").setup({
 		{'williamboman/mason-lspconfig.nvim'},
 		{'neovim/nvim-lspconfig'},
 		{'hrsh7th/cmp-nvim-lsp'},
-		{'hrsh7th/nvim-cmp'}
+		{'hrsh7th/nvim-cmp'},
+		{"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		---@module "ibl"
+		---@type ibl.config
+		opts = {},
+		}
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
