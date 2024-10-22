@@ -221,6 +221,16 @@ cmp.setup({
   },
 })
 
+-- lsp mason config
+require('mason').setup({})
+require('mason-lspconfig').setup({
+  handlers = {
+    function(server_name)
+      require('lspconfig')[server_name].setup({})
+    end,
+  },
+})
+
 -- user defined options
 vim.opt.smarttab = true
 vim.opt.tabstop = 4
