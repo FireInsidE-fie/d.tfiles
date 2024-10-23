@@ -278,4 +278,4 @@ vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', { noremap = true, silent = t
 vim.api.nvim_set_keymap('n', '<Leader>q', ':q<CR>', { noremap = true, silent = true })
 
 -- Open file explorer with Leader key
-vim.api.nvim_set_keymap('n', '<Leader>e', ':Ex<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>e', ':Neo<CR>', { noremap = true, silent = true })
