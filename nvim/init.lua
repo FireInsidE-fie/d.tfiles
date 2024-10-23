@@ -265,3 +265,17 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.colorcolumn = "80"
 vim.opt.number = true
+
+-- BEGIN KEYBINDS
+
+-- Set the Leader key to comma
+vim.g.mapleader = " "
+
+-- Save file with Leader key
+vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', { noremap = true, silent = true })
+
+-- Quit Neovim with Leader key
+vim.api.nvim_set_keymap('n', '<Leader>q', ':q<CR>', { noremap = true, silent = true })
+
+-- Open file explorer with Leader key
+vim.api.nvim_set_keymap('n', '<Leader>e', ':Ex<CR>', { noremap = true, silent = true })
