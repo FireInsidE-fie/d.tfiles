@@ -1,3 +1,62 @@
+-- Configuration by FireInside_fie on github
+-- Heavily inspired by many others, notably kickstart.nvim
+-- Without the Lord, all is in vain.
+
+-- Set the Leader key to comma
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
+-- Enable mouse mode
+vim.g.mouse = 'a'
+
+-- Don't show the mode, since it's already in the status line
+vim.opt.showmode = false
+
+-- Sync clipboard with the OS (schedule is to delay the activation of this line)
+vim.schedule(function()
+	vim.opt.clipboard = 'unnamedplus'
+end)
+
+vim.opt.number = true
+vim.opt.relativenumber = true
+
+vim.opt.breakindent = true
+vim.opt.undofile = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+vim.opt.signcolumn = 'yes'
+
+vim.opt.updatetime = 250
+vim.opt.timeoutlen = 300
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
+-- Whitespace display
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+-- Preview substitutions live, as you type
+vim.opt.inccommand = 'split'
+
+-- Highlight which line the cursor's on
+vim.opt.cursorline = true
+
+-- Minimum number of lines above and below cursor when scrolling
+vim.opt.scrolloff = 10
+
+-- BEGIN KEYBINDS
+
+
+-- Save file with Leader key
+vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', { noremap = true, silent = true })
+
+-- Quit Neovim with Leader key
+vim.api.nvim_set_keymap('n', '<Leader>q', ':q<CR>', { noremap = true, silent = true })
+
+-- Open file explorer Neotree with Leader key
+vim.api.nvim_set_keymap('n', '<Leader>e', ':Neotree<CR>', { noremap = true, silent = true })
+
 require("config.lazy")
 
 -- Lualine setup
@@ -264,18 +323,4 @@ vim.opt.smarttab = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.colorcolumn = "80"
-vim.opt.number = true
 
--- BEGIN KEYBINDS
-
--- Set the Leader key to comma
-vim.g.mapleader = " "
-
--- Save file with Leader key
-vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', { noremap = true, silent = true })
-
--- Quit Neovim with Leader key
-vim.api.nvim_set_keymap('n', '<Leader>q', ':q<CR>', { noremap = true, silent = true })
-
--- Open file explorer with Leader key
-vim.api.nvim_set_keymap('n', '<Leader>e', ':Neotree<CR>', { noremap = true, silent = true })
