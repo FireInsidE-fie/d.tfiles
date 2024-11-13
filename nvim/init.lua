@@ -47,6 +47,14 @@ vim.opt.scrolloff = 10
 
 -- BEGIN KEYBINDS
 
+-- Clear highlights from search mode when pushing esc key in normal mode
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+
+-- Diagnostic keymaps
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+
+-- Custom keymap for exiting terminal mode
+vim.keymap.set('n', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- Save file with Leader key
 vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', { noremap = true, silent = true })
@@ -56,6 +64,20 @@ vim.api.nvim_set_keymap('n', '<Leader>q', ':q<CR>', { noremap = true, silent = t
 
 -- Open file explorer Neotree with Leader key
 vim.api.nvim_set_keymap('n', '<Leader>e', ':Neotree<CR>', { noremap = true, silent = true })
+
+-- [[ Basic Autocommands ]]
+--  See `:help lua-guide-autocommands`
+
+-- Highlight when yanking (copying) text
+--  Try it with `yap` in normal mode
+--  See `:help vim.highlight.on_yank()`
+vim.api.nvim_create_autocmd('TextYankPost', {
+  desc = 'Highlight when yanking (copying) text',
+  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+})
 
 require("config.lazy")
 
