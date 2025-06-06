@@ -16,6 +16,8 @@
     "dark": "Catppuccin Latte"
   },
 
+  "relative_line_numbers": true,
+
   "agent": {
     "model_parameters": [],
     "default_model": {
