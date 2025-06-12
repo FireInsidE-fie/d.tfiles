@@ -1,5 +1,8 @@
----
+Language: Cpp
 BasedOnStyle: Google
+ColumnLimit: 80
 IndentWidth: 4
----
-AccessModifierOffest: -4
+AccessModifierOffset: -4
+BreakBeforeBraces: Allman
+AlignConsecutiveDeclarations: true      # Align variables in same column
+AllowShortFunctionsOnASingleLine: Empty
