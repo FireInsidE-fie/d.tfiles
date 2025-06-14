@@ -52,7 +52,12 @@
       "min_column": 0,
       "max_severity": null
     },
-    "cargo": null
+    "cargo": {
+      "fetch_cargo_diagnostics": true
+    }
+  },
+  "inlay_hints": {
+    "enabled": true
   },
   "minimap": {
     "show": "auto",
