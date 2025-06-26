@@ -6,3 +6,5 @@ AccessModifierOffset: -4
 BreakBeforeBraces: Allman
 AlignConsecutiveDeclarations: true      # Align variables in same column
 AllowShortFunctionsOnASingleLine: Empty
+DerivePointerAlignment: false
+PointerAlignment: Left
