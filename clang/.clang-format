@@ -3,7 +3,7 @@ BasedOnStyle: Google
 ColumnLimit: 80
 IndentWidth: 4
 AccessModifierOffset: -4
-BreakBeforeBraces: Allman
+BreakBeforeBraces: Attach
 AlignConsecutiveDeclarations: true      # Align variables in same column
 AllowShortFunctionsOnASingleLine: Empty
 DerivePointerAlignment: false
