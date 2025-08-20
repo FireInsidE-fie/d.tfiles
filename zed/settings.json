@@ -12,8 +12,8 @@
   "buffer_font_size": 16.0,
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Mocha",
-    "dark": "Catppuccin Latte"
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha"
   },
   "icon_theme": "Catppuccin Mocha",
   "relative_line_numbers": true,
@@ -90,12 +90,21 @@
     "C": ["c", "h"]
   },
   "languages": {
+    "C": {
+      "show_edit_predictions": false
+    },
     "C++": {
       "format_on_save": "on"
     },
     "Rust": {
       "show_edit_predictions": false,
       "format_on_save": "on"
+    },
+    "HTML": {
+      "tab_size": 2
+    },
+    "CSS": {
+      "tab_size": 2
     }
   }
 }
