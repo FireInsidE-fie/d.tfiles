@@ -54,8 +54,11 @@
     "cargo": null
   },
   "inlay_hints": {
-    "enabled": true,
-    "show_parameter_hints": false
+    "enabled": false,
+    "toggle_on_modifiers_press": {
+      "alt": true,
+      "control": true
+    }
   },
   "minimap": {
     "show": "auto",
@@ -72,6 +75,9 @@
   "vim_mode": true,
   "base_keymap": "JetBrains",
   "terminal": {
+    "shell": {
+      "program": "fish"
+    },
     "dock": "right",
     "line_height": "standard"
   },
@@ -94,6 +100,7 @@
       "show_edit_predictions": false
     },
     "C++": {
+      "show_edit_predictions": false,
       "format_on_save": "on"
     },
     "Rust": {
