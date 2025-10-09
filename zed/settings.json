@@ -85,6 +85,9 @@
   "soft_wrap": "editor_width",
   "show_whitespaces": "all",
   "git": {
+    "blame": {
+      "shiw_avatar": true
+    },
     "inline_blame": {
       "enabled": true,
       "delay_ms": 500,
