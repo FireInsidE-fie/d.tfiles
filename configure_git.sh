@@ -1,8 +1,8 @@
 #/bin/bash
 
-git config --unset user.name
-git config --unset user.email
-git config --unset --global init.defaultbranch
+git config --global --unset user.name
+git config --global --unset user.email
+git config --global --unset --global init.defaultbranch
 
 git config --global user.name "Aisling Fontaine"
 git config --global user.email "aisling.fontaine@protonmail.com"
