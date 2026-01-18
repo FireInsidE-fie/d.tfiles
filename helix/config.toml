@@ -7,3 +7,9 @@ rulers = [80, 100]
 bufferline = "multiple"  # Display in-use buffers when there are multiple
 trim-trailing-whitespace = true
 trim-final-newlines = true
+
+[editor.statusline]
+left = ["mode", "spinner", "spacer", "version-control"]
+center = ["file-name", "read-only-indicator", "file-modification-indicator", "spacer", "file-type",]
+right = ["diagnostics", "selections", "register", "spacer", "position", "position-percentage", "spacer", "file-encoding", "file-line-ending"]
+separator = "|"
