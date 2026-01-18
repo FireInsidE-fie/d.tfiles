@@ -13,3 +13,26 @@ left = ["mode", "spinner", "spacer", "version-control"]
 center = ["file-name", "read-only-indicator", "file-modification-indicator", "spacer", "file-type",]
 right = ["diagnostics", "selections", "register", "spacer", "position", "position-percentage", "spacer", "file-encoding", "file-line-ending"]
 separator = "|"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+[editor.whitespace.characters]
+tabpad = " "  # Disable tab padding
+
+[editor.indent-guides]
+render = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning"  # Display inline diagnostics on the current cursor's line
