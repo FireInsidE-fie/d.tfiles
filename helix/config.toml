@@ -1,4 +1,4 @@
-theme = "catppuccin_mocha"
+theme = "gruvbox_dark_soft"
 
 [editor]
 line-number = "relative"
@@ -10,12 +10,12 @@ trim-final-newlines = true
 
 [editor.statusline]
 left = ["mode", "spinner", "spacer", "version-control"]
-center = ["file-name", "read-only-indicator", "file-modification-indicator", "spacer", "file-type",]
+center = ["file-name", "read-only-indicator", "file-modification-indicator"]
 right = ["diagnostics", "selections", "register", "spacer", "position", "position-percentage", "spacer", "file-encoding", "file-line-ending"]
 separator = "|"
 
 [editor.lsp]
-display-inlay-hints = true
+display-inlay-hints = false
 
 [editor.cursor-shape]
 normal = "block"
