@@ -9,3 +9,13 @@ name = "cpp"
 file-types = ["cpp", "cc", "cxx", "hpp", "hcc", "hxx"]
 formatter = { command = 'clang-format' }
 auto-format = true
+
+
+[[language]]
+name = "markdown"
+file-types = ["md"]
+language-servers = ["harper-ls"]
+
+[language-server.harper-ls]
+command = "harper-ls"
+args = ["--stdio"]
